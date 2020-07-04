@@ -1,0 +1,274 @@
+html,body{
+    scroll-behavior:smooth;
+    color: #ffffff;
+}
+
+li{
+    text-align: center;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+#control_else{
+    float: left;
+    width: 20%;
+    height: 80px;
+}
+#control_volume{
+    float: left;
+    margin-top: 36px;
+    width: 100%;
+    height: 30px;
+}
+#progress_bar_div{
+    width: 100%;
+    height: 5px;
+}
+#time_div{
+    margin-left: 3%;
+    height: 30px;
+}
+#music_name{
+
+    font-size: 20px;
+    cursor: pointer;
+}
+#music_time{
+    margin-top: 6px;
+    float: left;
+    font-size: 15px;
+    cursor: pointer;
+}
+#music_name_div{
+    padding-left: 20px;
+    width: 100%;
+    height: 30px;
+    display:inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#control_center{
+    float: left;
+    width: 50%;
+    height: 80px;
+}
+#small_pic{
+    margin-top: 5px;
+}
+#play_btn{
+    margin-top: 10px;
+
+}
+#volume_btn{
+    display: block;
+    float: left;
+}
+#mode_btn{
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+#pre_btn{
+    margin-bottom: 6px;
+}
+#next_btn{
+    margin-bottom: 6px;
+}
+#blur_div{
+    height: 120vh;
+    width: 120vw;
+    position: fixed;
+    top:-10vh;
+    left:-10vh;
+}
+#blur_mask {
+    /*display: none;*/
+    position: absolute;
+    width: 120vw;
+    height: 120vh;
+    background-color: #000;
+    filter:alpha(opacity=30);
+    -moz-opacity:0.3;
+    opacity:0.3;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.container-fluid{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto ;
+}
+#music_control_div{
+    /*border: 1px solid red ;*/
+    position: fixed;
+
+    width: 80%;
+    bottom: 0;
+}
+#music_list_div{
+    /*background-color: #0ef7f7;*/
+    width: 100%;
+    margin-top: 5vh;
+    height: 85vh;
+    /*min-height: 700px;*/
+    overflow: hidden;
+    overflow-y:scroll;
+
+
+}
+::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.4 );
+}
+::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0);
+    border-radius: 2px;
+    background: rgba(0,0,0,0);
+}
+#music_pic-lrc_div{
+    margin-top: 5vh;
+    height: 85vh;
+    /*min-height: 700px;*/
+}
+#music_lrc_div{
+    overflow: hidden;
+    overflow-y:scroll;
+
+    /*background-color: #c0a16b;*/
+    height: 70%;
+}
+#music_lrc{
+    overflow: hidden;
+}
+.icon{
+    cursor: pointer;
+}
+
+#music_pic_div{
+    text-align:center;
+}
+#control_btn{
+    width: 240px;
+    height: 80px;
+    float: left;
+}
+#control_pic{
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+#music_control_div{
+    /*background-color: palevioletred;*/
+    height: 80px;
+    min-height: 80px;
+}
+.span-num{
+    width:5%;
+    text-align: center;
+}
+.span-name{
+    width:40%;
+    text-align: left;
+}
+.span-author{
+    width:20%;
+    text-align: left;
+}
+.span-album{
+    width:20%;
+    text-align: left;
+}
+.list-item{
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.list-item:not(:first-of-type){
+    border-top: 1px solid #d1d1d1;
+}
+.list-span{
+    line-height: 40px;
+    display:inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+}
+.list-span:hover{
+    color: #00ffff;
+    cursor: pointer;
+}
+
+#range_speed{
+    cursor: pointer;
+    background: -webkit-linear-gradient(#00ffff, #00ffff) no-repeat, #ddd;
+    background-size: 0% 100%;/*设置左右宽度比例*/
+    margin-top: 12px;
+    margin-left: 20px;
+    -webkit-appearance: none; /*去除原有样式*/
+    width: 90%;
+    border-radius: 2px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+#range_speed::-webkit-slider-thumb {
+    -webkit-appearance: none;/*去除滑块原有样式*/
+}
+#range_speed::-webkit-slider-runnable-track {
+    height: 4px;
+
+    border-radius: 2px; /*将轨道设为圆角的*/
+    /*box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; !*轨道内置阴影效果*!*/
+}
+#range_speed:focus {
+    outline: none;
+}
+#range_speed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    margin-top: -4px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff;
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}
+
+#input_volume{
+    cursor: pointer;
+    display: block;
+    float: left;
+    background: -webkit-linear-gradient(#00ffff, #00ffff) no-repeat, #ddd;
+    background-size: 0% 100%;/*设置左右宽度比例*/
+    margin-top: 9px;
+    margin-left: 10px;
+    -webkit-appearance: none; /*去除原有样式*/
+    width: 60%;
+    border-radius: 2px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+#input_volume::-webkit-slider-thumb {
+    -webkit-appearance: none;/*去除滑块原有样式*/
+}
+#input_volume::-webkit-slider-runnable-track {
+    height: 4px;
+
+    border-radius: 2px; /*将轨道设为圆角的*/
+    /*box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; !*轨道内置阴影效果*!*/
+}
+#input_volume:focus {
+    outline: none;
+}
+#input_volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    margin-top: -4px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff;
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}
