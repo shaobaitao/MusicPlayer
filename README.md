@@ -1,6 +1,6 @@
 # MusicPlayer
 🎵一款基于网易云音乐API的音乐播放器🎵
-🎵A music player based on Netease cloud music API🎵
+🎵A music player based on Netease cloud music API🎵  
 version：1.0 2020/7/4
 
 用了一点点Bootstrap+jQuery
